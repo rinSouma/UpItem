@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             x:Class="UpItem.Popup.Alert">
+  <StackLayout VerticalOptions="Center"
+               HorizontalOptions="FillAndExpand"
+               Padding="10, 20, 10, 20"
+               WidthRequest="100">
+    <StackLayout BackgroundColor="White" Padding="0, 10, 0, 0">
+      <Label x:Name="Title"  Text="管理者モード" TextColor="Gray" FontSize="20" HorizontalOptions="Center"></Label>
+      <ScrollView>
+        <StackLayout>
+          <Button x:Name="OKButton" Text="OK" Clicked="OnClose"></Button>
+        </StackLayout>
+      </ScrollView>
+    </StackLayout>
+  </StackLayout>
+</pages:PopupPage>
